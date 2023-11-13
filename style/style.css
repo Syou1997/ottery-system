@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myFont1";
+  src: url("./../清松手寫體1.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body .fixed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  opacity: 0.4;
+}
+body div.filter {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: -1;
+}
+body div.filter header h1 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+body div.filter h4 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: "myFont1", sans-serif;
+}
+body div.filter main .box-area {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body div.filter main .box-area label {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  margin-right: 0.2rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+body div.filter main .btn-area {
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body div.filter main .btn-area .btn {
+  min-width: 6rem;
+  min-height: 6rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bolder;
+  transition: all 0.2s ease;
+}
+body div.filter main .btn-area .btn:hover {
+  transform: scale(0.9);
+}
+body div.filter main .btn-area .btn:hover .p1 {
+  display: none;
+}
+body div.filter main .btn-area .btn:hover .p2 {
+  display: block;
+}
+body div.filter main .btn-area .btn:active {
+  transform: scale(1);
+}
+body div.filter main .btn-area .btn .p1 {
+  font-size: 2rem;
+}
+body div.filter main .btn-area .btn .p2 {
+  color: red;
+  font-size: 2rem;
+  display: none;
+}
+body div.filter main .name-area {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body div.filter main .name-area h2 {
+  font-size: 5rem;
+}/*# sourceMappingURL=style.css.map */
