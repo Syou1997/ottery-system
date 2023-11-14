@@ -231,6 +231,11 @@ btnEl.addEventListener("click", function () {
             })
         }
 
+        //把重複的名字拿掉
+        checkListed = checkListed.filter((item,index)=>{
+            return checkListed.indexOf(item) === index;
+        });
+   
         //從有打勾的人裡面選一位出來
         let randomNum = Math.floor(Math.random() * 100)
         while (randomNum >= checkListed.length) {
